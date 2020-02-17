@@ -1,13 +1,160 @@
+/* font start*/
+@font-face {
+  font-family: "segoeui-example";
+  src: url("./fonts/Segoeui/segoeui.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Segoeui/segoeui.otf") format("otf"),
+    url("./fonts/Segoeui/segoeui.svg") format("svg"),
+    url("./fonts/Segoeui/segoeui.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* style start*/
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "segoeui-example", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: #282c34;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+/* profile section start */
+.allWrapper {
+  min-height: 100vh;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.profileWrapper {
+  display: block;
+  margin-top: -4%;
+}
+
+.profile  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_img {
+  width: 195px;
+  height: 225px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 29px;
+  font-weight: 400;
+  color: white;
+}
+/* profile section start */
+
+
+/* Data section start */
+.dataWrapper {
+  margin-top: 19px;
+}
+
+ul.data_ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 57px;
+  margin-top: 40px;
+}
+
+li.data_li {
+  min-width: 303px;
+  list-style: none;
+  padding-bottom: 22px;
+}
+
+a.data_a {
+  display: flex;
+  text-decoration: none;
+}
+
+img.data_img {
+  width: 50px;
+  height: 50px;
+}
+
+span.data_span {
+  margin-left: 11px;
+  margin-top: -4px;
+  text-align: left;
+}
+
+h2.data_h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
+p.data_p {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/* hover */
+.data_li &:hover img {
+	/* filter: brightness(67%);
+	-webkit-filter: brightness(67%);
+	transform: scale(1.03);
+	-webkit-opacity: 1; */
+  display: none;
+}
+
+ul.language {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 6px;
+  color: #48443e;
+}
+/* Data section end */
+/* style end*/
+
+/*==========  iPad в landscape  ==========*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  .profileWrapper {
+    margin-top: -7%
+  }
+
+
+
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+  .profileWrapper {
+    margin-top: -15%;
+  }
+
 }
