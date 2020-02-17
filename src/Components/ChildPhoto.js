@@ -1,14 +1,13 @@
 import React from 'react'
-import personPhoto from '../img/ava.jpg'
 
 
-function ChildPhoto() {
+function ChildPhoto(props) {
 
   return (
     <div className='profileWrapper'>
       <div className='profile'>
-        <img className="profile_img" src={personPhoto} alt='фото' />
-        <h1>Renat Khakimov</h1>
+        <img className="profile_img" src={props.img} alt={props.alt} />
+        <h1>{props.h1}</h1>
       </div>
     </div>
   );

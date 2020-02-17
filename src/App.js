@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 
 
 // Components
-import Parent from './Components/Parent'
+import Preloader from './Components/Preloader'
 
 
 function App() {
   return (
-    <div className="App">
-        <Parent />
+    <div className="app_loader">
+      <div className="app_pulse">
+        <Preloader />
+      </div>
     </div>
   );
 }
