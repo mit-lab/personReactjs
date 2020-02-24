@@ -2,17 +2,11 @@ import React from 'react';
 
 
 // Components
-import Preloader from './Components/Preloader'
+import Parent from './Components/Parent'
 
 
 function App() {
-  return (
-    <div className="app_loader">
-      <div className="app_pulse">
-        <Preloader />
-      </div>
-    </div>
-  );
+  return (  <Parent /> );
 }
 
 export default App;
