@@ -11,7 +11,7 @@ import dataPerson from './Data/dataPerson'
 function Parent() {
 
   const dataPersonElements = dataPerson.map((data, index) =>
-    <li key = {index}><ChildPhoto data = {data} /></li>
+    <div key = {index}><ChildPhoto data = {data} /></div>
   )
 
   const dataProfileElements = dataProfile.map((data, index) =>

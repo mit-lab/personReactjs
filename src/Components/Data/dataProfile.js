@@ -17,7 +17,7 @@ export default [
   },
 
   {
-    "a": "https://yandex.ru/maps/?um=constructor%3Ad58e13bb28b1094828fd73f0d0d2b01603d95e6d13422128badbb870627c15eb&source=constructorLink",
+    "a": "https://yandex.ru/map-widget/v1/?um=constructor%3A359110b6c3ec1f690b8a95a1f333b043227e4389f7b59e3dd7062564fe0966b1&amp;source=constructor",
     "img": location,
     "alt": "location",
     "h2": "Russia, Kazan",
